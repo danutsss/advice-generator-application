@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap');
+
+:root {
+    --primary-color-lightcyan: hsl(193, 38%, 86%);
+    --primary-color-neongreen: hsl(150, 100%, 66%);
+
+    --neutral-color-grayishblue: hsl(217, 19%, 38%);
+    --neutral-color-dgrayishblue: hsl(217, 19%, 24%);
+    --neutral-color-darkblue: hsl(218, 23%, 16%);
+}
+
+body { 
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-color-darkblue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--primary-color-neongreen);
+}
+.attribution a {
+    color: var(--primary-color-lightcyan);
+}
+
+.advice-component {
+    position: relative;
+    border-radius: 5%;
+    height: 325px;
+    width: 575px;
+    background-color: var(--neutral-color-dgrayishblue);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.advice-id {
+    color: var(--primary-color-neongreen);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.advice-quote {
+    color: var(--primary-color-lightcyan);
+    text-align: center;
+    font-size: 28px;
+}
+
+.dice-icon {
+    height: 48px;
+    width: 48px;
+    background-color: var(--primary-color-neongreen);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 325px;
+    transition: all 0.5s ease-out;
+}
+
+.dice-icon:hover {
+    box-shadow: var(--primary-color-neongreen) 0px 0px 30px;
+    transition: all 0.5s ease-in;
+}
+
+.dice-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 375px) {
+    .advice-component {
+        max-width: 325px;
+    }
+
+    .advice-quote {
+        font-size: 20px;
+    }
+}

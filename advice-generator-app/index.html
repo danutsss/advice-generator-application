@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/images/favicon-32x32.png"
+		/>
+
+		<!-- advice-component .css -->
+		<link
+			rel = "stylesheet"
+			type = "text/css"
+			href = "assets/css/app-styles.css"
+		/>
+
+		<title>Advice generator app</title>
+	</head>
+	<body>
+		<!-- advice-component start -->
+		<div class = "advice-component">
+			<!-- advice-id -->
+			<h1 class = "advice-id"></h1>
+
+			<!-- advice-quote -->
+			<p class = "advice-quote"></p>
+
+			<!-- divider start -->
+			<center>
+				<picture>
+					<source srcset = "assets/images/pattern-divider-mobile.svg" media = "(max-width: 375px)" />
+					<img src = "assets/images/pattern-divider-desktop.svg" alt = "pattern divider" />
+				</picture>
+			</center>
+			<!-- divider end -->
+
+			<!-- dice-icon start -->
+			<div class = "dice-icon" id = "get-advice">
+				<img src = "assets/images/icon-dice.svg" alt = "dice icon" />
+			</div> 
+			<!-- dice-icon end -->
+		</div>
+		<!-- advice-component end -->
+
+		<br />
+		<br />
+
+		<div class="attribution">
+			Coded by <a href="https://github.com/matei1337">Matei Nicolae - Daniel</a>
+		</div>
+
+		<!-- advice-component .js -->
+		<script src = "assets/js/advice.js"></script>
+	</body>
+</html>
